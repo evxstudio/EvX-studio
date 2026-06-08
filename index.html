@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EvX Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090B;--p:#7C3AED;--s:#2563EB;--t:#fff}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:linear-gradient(180deg,#09090B,#0f1020);color:#fff}
+header{position:sticky;top:0;background:rgba(9,9,11,.75);backdrop-filter:blur(10px);padding:18px 7%;display:flex;justify-content:space-between}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{min-height:70vh;display:grid;place-items:center;text-align:center;padding:50px}
+.hero h1{font-size:min(15vw,120px);text-shadow:0 0 30px #7C3AED}
+.hero h2{color:#c8c8ff}
+.wrap{padding:60px 7%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.05);padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.08);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.thumb{height:140px;border-radius:12px;background:linear-gradient(45deg,#7C3AED,#2563EB);display:grid;place-items:center;font-size:28px;font-weight:700}
+.btn{display:inline-block;margin-top:15px;padding:10px 18px;background:linear-gradient(45deg,#7C3AED,#2563EB);color:#fff;border-radius:999px;text-decoration:none}
+input{width:100%;padding:14px;margin:0 auto 30px;border-radius:12px;border:none;background:#1b1b24;color:#fff}
+footer{text-align:center;padding:40px;color:#aaa}
+</style>
+</head>
+<body>
+<header>
+<div><b>EvX</b> Studio</div>
+<nav><a href="#games">Games</a><a href="#sites">Websites</a></nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>EvX</h1>
+<h2>studio</h2>
+<p>The best site that displays websites and games.</p>
+</div>
+</section>
+
+<div class="wrap">
+<input id="search" placeholder="Search...">
+
+<h2 id="games">Games</h2>
+<div id="gamesGrid" class="grid"></div>
+
+<br><br>
+
+<h2 id="sites">Websites</h2>
+<div id="sitesGrid" class="grid"></div>
+</div>
+
+<footer>© EvX Studio</footer>
+
+<script>
+const games=[
+{
+title:"lumina gird",
+description:"حطم وحقق اعلى نتيجة ",
+imageText:"GAME",
+link:"https://aaissat136.github.io/lumina-gird-/"
+}
+];
+
+const websites=[
+{
+title:"BEM MASTER",
+description:"المنصة الشاملة لتحضير شهادة التعليم المتوسط (BEM) في الجزائر - ، ملخصات، وتحديات ذكاء",
+imageText:"WEB",
+link:"https://example.com"
+},
+{
+title:"Launcher",
+description:"Replace with your launcher",
+imageText:"APP",
+link:"https://example.com/launcher"
+}
+];
+
+function render(list,id,label){
+const c=document.getElementById(id);
+c.innerHTML="";
+list.forEach(i=>{
+c.innerHTML+=`
+<div class="card" data-text="${i.title} ${i.description}">
+<div class="thumb">${i.imageText}</div>
+<h3>${i.title}</h3>
+<p>${i.description}</p>
+<a class="btn" href="${i.link}" target="_blank">${label}</a>
+</div>`;
+});
+}
+render(games,"gamesGrid","Play Now");
+render(websites,"sitesGrid","Visit");
+
+document.getElementById("search").addEventListener("input",e=>{
+const q=e.target.value.toLowerCase();
+document.querySelectorAll(".card").forEach(card=>{
+card.style.display=card.dataset.text.toLowerCase().includes(q)?"block":"none";
+});
+});
+</script>
+</body>
+</html>
