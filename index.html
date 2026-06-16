@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html 
+lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,6 +72,7 @@ button{font-family:inherit;cursor:pointer;}
 .navbar.scrolled{box-shadow:0 4px 20px rgba(155,93,229,0.15);}
 .nav-inner{max-width:1300px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;}
 .nav-logo{text-decoration:none;display:flex;flex-direction:column;line-height:1;}
+.nav-logo-img{width:48px;height:48px;object-fit:contain;border-radius:8px;}
 .logo-evx{font-family:var(--font-display);font-size:1.8rem;font-weight:900;color:var(--color-neon);text-shadow:0 0 10px var(--color-neon);}
 .logo-studio{font-family:var(--font-display);font-size:0.65rem;font-weight:500;letter-spacing:0.4em;color:var(--text-secondary);text-transform:uppercase;margin-top:2px;}
 .nav-links{display:flex;gap:1.8rem;}
@@ -284,15 +286,19 @@ textarea.form-control{min-height:150px;resize:vertical;}
   .section{padding:4rem 0;}
 }
 </style>
+
+<link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
 
 <!-- ==================== NAVBAR ==================== -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo" data-page="home">
-      <span class="logo-evx">EvX</span>
-      <span class="logo-studio">Studio</span>
+      <div style="display:flex;flex-direction:column;line-height:1;">
+        <span class="logo-evx">EvX</span><a href="#" class="nav-logo" data-page="home">
+   
+        <span class="logo-studio">Studio</span>
+      </div>
     </a>
     <div class="nav-links">
       <a href="#" data-page="home" class="active">Home</a>
