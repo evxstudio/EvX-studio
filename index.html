@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html 
-lang="en">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -296,12 +295,12 @@ textarea.form-control{min-height:150px;resize:vertical;}
   <div class="nav-inner">
       <div style="display:flex;flex-direction:column;line-height:1;">
         <span class="logo-evx">EvX</span><a href="#" class="nav-logo" data-page="home">
-   
         <span class="logo-studio">Studio</span>
       </div>
     </a>
     <div class="nav-links">
       <a href="#" data-page="home" class="active">Home</a>
+      <a href="#" data-page="explore">Explore</a>
       <a href="#" data-page="websites">Websites</a>
       <a href="#" data-page="apps">Apps</a>
       <a href="#" data-page="games">Games</a>
@@ -319,6 +318,7 @@ textarea.form-control{min-height:150px;resize:vertical;}
 </nav>
 <div class="nav-mobile">
   <a href="#" data-page="home">Home</a>
+  <a href="#" data-page="explore">Explore</a>
   <a href="#" data-page="websites">Websites</a>
   <a href="#" data-page="apps">Apps</a>
   <a href="#" data-page="games">Games</a>
@@ -342,7 +342,7 @@ textarea.form-control{min-height:150px;resize:vertical;}
       </div>
       <p class="hero-tagline">Independent gaming & software studio — crafting games, apps, and digital experiences that push boundaries.</p>
       <div class="hero-cta">
-        <a href="#" class="btn btn-primary btn-lg" data-page="games">Explore Games</a>
+        <a href="#" class="btn btn-primary btn-lg" data-page="explore">Explore</a>
         <a href="#" class="btn btn-outline btn-lg" data-page="about">Our Story</a>
       </div>
     </div>
@@ -492,6 +492,34 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
+<!-- ==================== EXPLORE PAGE (NEW) ==================== -->
+<main class="page" id="page-explore">
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Discover</span>
+        <h2 class="section-title">Explore <span class="text-gradient">Everything</span></h2>
+        <p class="section-subtitle">Search and discover all our applications and games in one place.</p>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="search-bar reveal">
+        <input type="text" id="explore-search" class="search-input" placeholder="🔍 Search apps, games, and more..." />
+      </div>
+      
+      <div class="filter-group reveal">
+        <button class="filter-btn explore-filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn explore-filter-btn" data-filter="app">Apps</button>
+        <button class="filter-btn explore-filter-btn" data-filter="game">Games</button>
+      </div>
+
+      <div class="grid-3" id="explore-grid">
+        <!-- Cards will be injected here by JavaScript -->
+      </div>
+    </div>
+  </section>
+</main>
+
 <!-- ==================== WEBSITES PAGE ==================== -->
 <main class="page" id="page-websites">
   <section class="section">
@@ -503,7 +531,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
         <div class="section-line"></div>
       </div>
       <div class="grid-3" id="websites-grid">
-        <!-- Website cards duplicated easily -->
         <article class="card project-card reveal searchable-card" data-title="Portfolio Hub" data-category="portfolio">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a1a0a,#4a2a0a);">🎨</div>
           <div class="project-card-body">
@@ -588,12 +615,12 @@ textarea.form-control{min-height:150px;resize:vertical;}
         <button class="filter-btn" data-filter="social">Social</button>
       </div>
       <div class="grid-3" id="apps-grid">
-        <article class="card project-card reveal searchable-card" data-title="EvX Tracker" data-category="gaming" data-downloads="2500">
-          <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a1a3a,#0a3a6a);">📊</div>
+        <article class="card project-card reveal searchable-card" data-title="BEM Master" data-category="gaming" data-downloads="2500">
+          <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a1a3a,#0a3a6a);">📚</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Gaming</div>
-            <h3 class="project-card-title">EvX Tracker</h3>
-            <p class="project-card-desc">Performance tracking app built for competitive gamers.</p>
+            <div class="project-card-tag">تعليم</div>
+            <h3 class="project-card-title">BEM Master</h3>
+            <p class="project-card-desc">المنصة الشاملة لتحضير شهادة التعليم المتوسط (BEM) في الجزائر - ، ملخصات، وتحديات ذكاء.</p>
             <div class="project-card-meta"><span>v2.1.0</span><span>⬇ 2.5K</span></div>
             <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
           </div>
@@ -675,12 +702,12 @@ textarea.form-control{min-height:150px;resize:vertical;}
         <button class="filter-btn" data-filter="stealth">Stealth</button>
       </div>
       <div class="grid-3" id="games-grid">
-        <article class="card project-card reveal searchable-card" data-title="Neon Drift" data-category="racing">
+        <article class="card project-card reveal searchable-card" data-title="limuna gird" data-category="racing">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#1a0a3a,#3a0a6a);">🏎️</div>
           <div class="project-card-body">
             <div class="project-card-tag">Racing</div>
-            <h3 class="project-card-title">Neon Drift</h3>
-            <p class="project-card-desc">Cyberpunk racing with procedural city generation and neon visuals.</p>
+            <h3 class="project-card-title">limuna gird</h3>
+            <p class="project-card-desc">حطم وحقق اعلى نتيجة .</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
               <a href="#" class="btn btn-sm btn-primary">Play Now</a>
@@ -964,6 +991,7 @@ textarea.form-control{min-height:150px;resize:vertical;}
         <h4>Navigate</h4>
         <ul>
           <li><a href="#" data-page="home">Home</a></li>
+          <li><a href="#" data-page="explore">Explore</a></li>
           <li><a href="#" data-page="websites">Websites</a></li>
           <li><a href="#" data-page="apps">Apps</a></li>
           <li><a href="#" data-page="games">Games</a></li>
@@ -1034,6 +1062,10 @@ textarea.form-control{min-height:150px;resize:vertical;}
       document.querySelector('.nav-hamburger').classList.remove('active');
       setTimeout(initReveal,100);
       setTimeout(initStats,200);
+      
+      if(page === 'explore') {
+        setTimeout(initExplorePage, 100);
+      }
     }
   }
   document.addEventListener('click',e=>{
@@ -1134,7 +1166,6 @@ initStats();
   init();
   function animate(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    // Draw connections
     for(let i=0;i<particles.length;i++){
       for(let j=i+1;j<particles.length;j++){
         const dx=particles[i].x-particles[j].x;
@@ -1156,21 +1187,23 @@ initStats();
   animate();
 })();
 
-/* ==================== SEARCH & FILTER ==================== */
-function initSearchFilter(containerId,searchId,filterClass,sortId){
+/* ==================== SEARCH & FILTER (FIXED) ==================== */
+function initSearchFilter(gridId, pageId, searchId, filterClass, sortId){
   const searchInput=document.getElementById(searchId);
-  const filterBtns=document.querySelectorAll('#page-'+containerId+' .'+filterClass);
-  const cards=document.querySelectorAll('#'+containerId+' .searchable-card');
+  // FIX: Corrected selector to target the actual page ID
+  const filterBtns=document.querySelectorAll('#page-'+pageId+' .'+filterClass);
+  const cards=document.querySelectorAll('#'+gridId+' .searchable-card');
   const sortSelect=document.getElementById(sortId);
 
   function filterItems(){
-    const query=searchInput?searchInput.value.toLowerCase():'';
-    const activeFilter=document.querySelector('#page-'+containerId+' .'+filterClass+'.active');
+    const query=searchInput?searchInput.value.toLowerCase().trim():'';
+    const activeFilter=document.querySelector('#page-'+pageId+' .'+filterClass+'.active');
     const category=activeFilter?activeFilter.getAttribute('data-filter'):'all';
     cards.forEach(card=>{
-      const title=card.getAttribute('data-title').toLowerCase();
+      // FIX: Search through all text content (title, description, tags)
+      const text = card.textContent.toLowerCase();
       const cardCategory=card.getAttribute('data-category');
-      const matchesSearch=title.includes(query);
+      const matchesSearch = query === '' || text.includes(query);
       const matchesCategory=category==='all'||cardCategory===category;
       card.style.display=(matchesSearch&&matchesCategory)?'':'none';
     });
@@ -1183,7 +1216,7 @@ function initSearchFilter(containerId,searchId,filterClass,sortId){
   }));
   if(sortSelect)sortSelect.addEventListener('change',()=>{
     const sortBy=sortSelect.value;
-    const container=document.getElementById(containerId);
+    const container=document.getElementById(gridId);
     const items=Array.from(cards);
     items.sort((a,b)=>{
       if(sortBy==='name')return a.getAttribute('data-title').localeCompare(b.getAttribute('data-title'));
@@ -1193,8 +1226,73 @@ function initSearchFilter(containerId,searchId,filterClass,sortId){
     items.forEach(item=>container.appendChild(item));
   });
 }
-initSearchFilter('apps-grid','apps-search','filter-btn','apps-sort');
-initSearchFilter('games-grid','games-search','filter-btn',null);
+// FIX: Passed correct page IDs ('apps' and 'games')
+initSearchFilter('apps-grid', 'apps', 'apps-search', 'filter-btn', 'apps-sort');
+initSearchFilter('games-grid', 'games', 'games-search', 'filter-btn', null);
+
+/* ==================== EXPLORE PAGE LOGIC (FIXED) ==================== */
+function initExplorePage() {
+    const exploreGrid = document.getElementById('explore-grid');
+    if (!exploreGrid || exploreGrid.dataset.initialized) return;
+    
+    exploreGrid.innerHTML = '';
+    
+    // Clone apps from Apps page
+    document.querySelectorAll('#apps-grid .searchable-card').forEach(card => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute('data-type', 'app');
+        clone.classList.add('explore-card');
+        // FIX: Remove 'reveal' class so cards are immediately visible
+        clone.classList.remove('reveal'); 
+        exploreGrid.appendChild(clone);
+    });
+    
+    // Clone games from Games page
+    document.querySelectorAll('#games-grid .searchable-card').forEach(card => {
+        const clone = card.cloneNode(true);
+        clone.setAttribute('data-type', 'game');
+        clone.classList.add('explore-card');
+        // FIX: Remove 'reveal' class so cards are immediately visible
+        clone.classList.remove('reveal'); 
+        exploreGrid.appendChild(clone);
+    });
+    
+    exploreGrid.dataset.initialized = 'true';
+    
+    const searchInput = document.getElementById('explore-search');
+    const filterBtns = document.querySelectorAll('.explore-filter-btn');
+    const cards = exploreGrid.querySelectorAll('.explore-card');
+    
+    function filterExplore() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        const activeFilter = document.querySelector('.explore-filter-btn.active');
+        const type = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
+        
+        cards.forEach(card => {
+            // FIX: Search through all text content
+            const text = card.textContent.toLowerCase();
+            const cardType = card.getAttribute('data-type');
+            
+            const matchesSearch = query === '' || text.includes(query);
+            const matchesType = type === 'all' || cardType === type;
+            
+            card.style.display = (matchesSearch && matchesType) ? '' : 'none';
+        });
+    }
+    
+    if(searchInput) {
+        searchInput.addEventListener('input', filterExplore);
+        filterExplore(); // Run once to set initial state
+    }
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterExplore();
+        });
+    });
+}
 
 /* ==================== GALLERY LIGHTBOX ==================== */
 (function(){
@@ -1242,5 +1340,4 @@ initSearchFilter('games-grid','games-search','filter-btn',null);
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
-</html>
 </html>
