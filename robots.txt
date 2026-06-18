@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evxstudio.github.io/EvX-studio/sitemap.xml
