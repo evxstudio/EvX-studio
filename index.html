@@ -13,14 +13,13 @@
 <meta property="og:url" content="https://evxstudio.com/" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="EvX STUDIO" />
-<title>EvX STUDIO</title>
+<title>EvX STUDIO — Games, Apps & Web</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
 <style>
-/* ==================== RESET & VARIABLES ==================== */
 :root{
  --bg-primary:#0a0a1a;
   --bg-secondary:#121225;
@@ -59,7 +58,6 @@ a{color:inherit;}
 img{max-width:100%;display:block;}
 button{font-family:inherit;cursor:pointer;}
 
-/* ==================== NAVBAR ==================== */
 .navbar{
   position:fixed;top:0;left:0;width:100%;z-index:1000;
   background:rgba(10,10,26,0.85);
@@ -91,7 +89,6 @@ button{font-family:inherit;cursor:pointer;}
 .nav-mobile.active{transform:translateY(0);}
 .nav-mobile a{text-decoration:none;color:var(--text-primary);font-size:1.2rem;font-family:var(--font-heading);padding:0.5rem 0;border-bottom:1px solid var(--border-color);}
 
-/* ==================== BUTTONS ==================== */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.8rem 1.8rem;border-radius:8px;font-family:var(--font-heading);font-weight:600;font-size:1rem;text-decoration:none;transition:var(--transition);cursor:pointer;border:none;}
 .btn-primary{background:var(--color-neon);color:#fff;box-shadow:0 0 15px rgba(155,93,229,0.4);}
 .btn-primary:hover{background:var(--color-neon-light);box-shadow:0 0 25px rgba(155,93,229,0.8);transform:translateY(-2px);}
@@ -100,12 +97,10 @@ button{font-family:inherit;cursor:pointer;}
 .btn-lg{padding:1rem 2.5rem;font-size:1.1rem;}
 .btn-sm{padding:0.5rem 1.2rem;font-size:0.85rem;}
 
-/* ==================== PAGE SYSTEM ==================== */
 .page{display:none;padding-top:72px;min-height:100vh;animation:fadeIn 0.5s ease;}
 .page.active{display:block;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
 
-/* ==================== HERO ==================== */
 .hero{position:relative;min-height:calc(100vh - 72px);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;}
 #hero-canvas{position:absolute;inset:0;z-index:0;}
 .hero-overlay{position:absolute;inset:0;background:radial-gradient(circle at center,transparent 0%,var(--bg-primary) 80%);z-index:1;}
@@ -125,7 +120,6 @@ button{font-family:inherit;cursor:pointer;}
 .hero-scroll-arrow{width:20px;height:20px;border-right:2px solid var(--color-neon);border-bottom:2px solid var(--color-neon);transform:rotate(45deg);margin:0.5rem auto 0;animation:bounce 2s infinite;}
 @keyframes bounce{0%,100%{transform:rotate(45deg) translate(0,0);}50%{transform:rotate(45deg) translate(5px,5px);}}
 
-/* ==================== SECTIONS ==================== */
 .container{max-width:1300px;margin:0 auto;padding:0 2rem;}
 .section{padding:6rem 0;}
 .section-header{text-align:center;margin-bottom:4rem;}
@@ -136,19 +130,16 @@ button{font-family:inherit;cursor:pointer;}
 .section-subtitle{color:var(--text-secondary);max-width:600px;margin:0 auto;}
 .section-line{width:60px;height:3px;background:var(--color-neon);margin:1.5rem auto 0;box-shadow:0 0 10px var(--color-neon);}
 
-/* ==================== CARDS ==================== */
 .card{background:var(--bg-card);backdrop-filter:blur(10px);border:1px solid var(--border-color);border-radius:16px;padding:2rem;transition:var(--transition);position:relative;overflow:hidden;}
 .card:hover{transform:translateY(-5px);border-color:var(--color-neon);box-shadow:0 10px 30px rgba(155,93,229,0.2);}
 .cyber-corner::before,.cyber-corner::after{content:'';position:absolute;width:20px;height:20px;border:2px solid var(--color-neon);}
 .cyber-corner::before{top:10px;left:10px;border-right:none;border-bottom:none;}
 .cyber-corner::after{bottom:10px;right:10px;border-left:none;border-top:none;}
 
-/* ==================== GRIDS ==================== */
 .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;}
 .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;}
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;}
 
-/* ==================== FEATURE CARDS ==================== */
 .feature-card{text-align:center;text-decoration:none;color:inherit;display:block;}
 .feature-card-icon{font-size:3rem;margin-bottom:1rem;display:inline-block;transition:var(--transition);}
 .feature-card:hover .feature-card-icon{transform:scale(1.15) rotate(-5deg);filter:drop-shadow(0 0 15px var(--color-neon));}
@@ -157,7 +148,6 @@ button{font-family:inherit;cursor:pointer;}
 .feature-card-arrow{color:var(--color-neon);font-size:1.5rem;transition:var(--transition);display:inline-block;}
 .feature-card:hover .feature-card-arrow{transform:translateX(8px);}
 
-/* ==================== PROJECT CARDS ==================== */
 .project-card{padding:0;overflow:hidden;}
 .project-card-img-wrapper{height:200px;background:var(--bg-secondary);display:flex;align-items:center;justify-content:center;font-size:4rem;border-bottom:1px solid var(--border-color);position:relative;overflow:hidden;}
 .project-card-img-wrapper::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 60%,rgba(155,93,229,0.2));}
@@ -168,7 +158,6 @@ button{font-family:inherit;cursor:pointer;}
 .project-card-footer{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
 .project-card-meta{display:flex;gap:1rem;color:var(--text-secondary);font-size:0.85rem;}
 
-/* ==================== GALLERY ==================== */
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
 .gallery-item{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/10;cursor:pointer;border:1px solid var(--border-color);}
 .gallery-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;transition:var(--transition);}
@@ -176,13 +165,11 @@ button{font-family:inherit;cursor:pointer;}
 .gallery-item:hover .gallery-overlay{opacity:1;}
 .gallery-item:hover .gallery-placeholder{transform:scale(1.1);}
 
-/* ==================== STATS ==================== */
 .stats-section{padding:4rem 0;background:var(--bg-secondary);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color);}
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center;}
 .stat-number{font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--color-neon);text-shadow:0 0 15px rgba(155,93,229,0.5);}
 .stat-label{font-family:var(--font-heading);font-size:1.1rem;color:var(--text-secondary);margin-top:0.5rem;}
 
-/* ==================== LINKS PAGE ==================== */
 .links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;max-width:900px;margin:0 auto;}
 .link-card{display:flex;align-items:center;gap:1.5rem;padding:1.5rem 2rem;text-decoration:none;color:inherit;transition:var(--transition);}
 .link-card:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 30px rgba(155,93,229,0.3);}
@@ -193,7 +180,6 @@ button{font-family:inherit;cursor:pointer;}
 .link-card-arrow{color:var(--color-neon);font-size:1.5rem;transition:var(--transition);}
 .link-card:hover .link-card-arrow{transform:translateX(5px);}
 
-/* ==================== SEARCH & FILTER ==================== */
 .search-bar{display:flex;gap:1rem;margin-bottom:2rem;flex-wrap:wrap;align-items:center;justify-content:center;}
 .search-input{flex:1;min-width:250px;max-width:500px;padding:0.8rem 1.2rem;background:var(--bg-card);border:1px solid var(--border-color);border-radius:8px;color:var(--text-primary);font-family:var(--font-body);font-size:1rem;transition:var(--transition);}
 .search-input:focus{outline:none;border-color:var(--color-neon);box-shadow:0 0 10px rgba(155,93,229,0.3);}
@@ -203,7 +189,6 @@ button{font-family:inherit;cursor:pointer;}
 .filter-btn.active{background:var(--color-neon);color:#fff;border-color:var(--color-neon);box-shadow:0 0 15px rgba(155,93,229,0.4);}
 .sort-select{padding:0.6rem 1rem;background:var(--bg-card);border:1px solid var(--border-color);border-radius:8px;color:var(--text-primary);font-family:var(--font-body);cursor:pointer;}
 
-/* ==================== ABOUT PAGE ==================== */
 .about-hero{text-align:center;padding:4rem 2rem;background:radial-gradient(ellipse at center,rgba(155,93,229,0.1) 0%,transparent 70%);}
 .about-hero h1{font-family:var(--font-heading);font-size:3.5rem;margin-bottom:1.5rem;}
 .about-hero p{font-size:1.2rem;color:var(--text-secondary);max-width:700px;margin:0 auto;}
@@ -218,7 +203,6 @@ button{font-family:inherit;cursor:pointer;}
 .timeline-title{font-family:var(--font-heading);font-size:1.3rem;margin-bottom:0.3rem;}
 .timeline-desc{color:var(--text-secondary);font-size:0.95rem;}
 
-/* ==================== CONTACT ==================== */
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
 .contact-info h2{font-family:var(--font-heading);font-size:2.5rem;margin-bottom:1rem;}
 .contact-info p{color:var(--text-secondary);margin-bottom:2rem;font-size:1.05rem;}
@@ -234,7 +218,6 @@ button{font-family:inherit;cursor:pointer;}
 .form-control:focus{outline:none;border-color:var(--color-neon);box-shadow:0 0 10px rgba(155,93,229,0.3);}
 textarea.form-control{min-height:150px;resize:vertical;}
 
-/* ==================== FOOTER ==================== */
 .footer{background:var(--bg-secondary);padding:4rem 0 2rem;border-top:1px solid var(--border-color);}
 .footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
 .footer-logo{text-decoration:none;display:flex;flex-direction:column;line-height:1;margin-bottom:1rem;}
@@ -253,21 +236,18 @@ textarea.form-control{min-height:150px;resize:vertical;}
 .footer-copyright{color:var(--text-secondary);font-size:0.9rem;}
 .footer-badge{padding:0.3rem 1rem;background:rgba(155,93,229,0.1);border:1px solid var(--border-color);border-radius:100px;font-size:0.8rem;color:var(--color-neon);}
 
-/* ==================== UTILITIES ==================== */
 .text-center{text-align:center;}
 .mt-4{margin-top:2rem;}
 .mb-4{margin-bottom:2rem;}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
 .reveal.active{opacity:1;transform:translateY(0);}
 
-/* ==================== LIGHTBOX ==================== */
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.9);display:none;align-items:center;justify-content:center;z-index:9999;backdrop-filter:blur(10px);padding:2rem;}
 .lightbox.active{display:flex;}
 .lightbox-content{background:var(--bg-card);padding:2rem;border-radius:16px;border:1px solid var(--border-color);text-align:center;max-width:90%;max-height:90vh;overflow:auto;position:relative;}
 .lightbox-close{position:absolute;top:1rem;right:1rem;background:none;border:none;color:var(--text-primary);font-size:2rem;cursor:pointer;width:40px;height:40px;border-radius:50%;transition:var(--transition);}
 .lightbox-close:hover{background:rgba(155,93,229,0.2);color:var(--color-neon);}
 
-/* ==================== RESPONSIVE ==================== */
 @media (max-width:992px){
   .footer-inner{grid-template-columns:1fr 1fr;}
   .contact-wrap{grid-template-columns:1fr;}
@@ -290,7 +270,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
 </head>
 <body>
 
-<!-- ==================== NAVBAR ==================== -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
       <div style="display:flex;flex-direction:column;line-height:1;">
@@ -327,7 +306,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   <a href="#" data-page="contact">Contact</a>
 </div>
 
-<!-- ==================== HOME PAGE ==================== -->
 <main class="page active" id="page-home">
   <section class="hero">
     <canvas id="hero-canvas"></canvas>
@@ -402,7 +380,8 @@ textarea.form-control{min-height:150px;resize:vertical;}
             <h3 class="project-card-title">Neon Drift</h3>
             <p class="project-card-desc">A cyberpunk racing game with procedural city generation.</p>
             <div class="project-card-footer">
-              <a href="#" class="btn btn-sm btn-primary" data-page="games">Play Now</a>
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Play Now</a>
             </div>
           </div>
         </article>
@@ -413,7 +392,8 @@ textarea.form-control{min-height:150px;resize:vertical;}
             <h3 class="project-card-title">EvX Tracker</h3>
             <p class="project-card-desc">Performance tracking app built for competitive gamers.</p>
             <div class="project-card-footer">
-              <a href="#" class="btn btn-sm btn-primary" data-page="apps">Download</a>
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Visit Site</a>
             </div>
           </div>
         </article>
@@ -421,10 +401,10 @@ textarea.form-control{min-height:150px;resize:vertical;}
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a2a1a,#0a4a2a);">🌐</div>
           <div class="project-card-body">
             <div class="project-card-tag">Website</div>
-            <h3 class="project-card-title">Portfolio Hub</h3>
+            <h3 class="project-card-title">BEM Master</h3>
             <p class="project-card-desc">A sleek personal portfolio platform with dynamic showcasing.</p>
             <div class="project-card-footer">
-              <a href="#" class="btn btn-sm btn-outline" data-page="websites">View</a>
+              <a href="https://aaissat136.github.io/BEM-Master/" target="_blank" class="btn btn-sm btn-outline">Visit Site →</a>
             </div>
           </div>
         </article>
@@ -492,7 +472,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== EXPLORE PAGE (NEW) ==================== -->
 <main class="page" id="page-explore">
   <section class="section">
     <div class="container">
@@ -514,13 +493,11 @@ textarea.form-control{min-height:150px;resize:vertical;}
       </div>
 
       <div class="grid-3" id="explore-grid">
-        <!-- Cards will be injected here by JavaScript -->
       </div>
     </div>
   </section>
 </main>
 
-<!-- ==================== WEBSITES PAGE ==================== -->
 <main class="page" id="page-websites">
   <section class="section">
     <div class="container">
@@ -531,56 +508,56 @@ textarea.form-control{min-height:150px;resize:vertical;}
         <div class="section-line"></div>
       </div>
       <div class="grid-3" id="websites-grid">
-        <article class="card project-card reveal searchable-card" data-title="Portfolio Hub" data-category="portfolio">
-          <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a1a0a,#4a2a0a);">🎨</div>
+        <article class="card project-card reveal searchable-card" data-title="BEM Master" data-category="portfolio">
+          <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a1a0a,#4a2a0a);">📚</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Portfolio</div>
-            <h3 class="project-card-title">Portfolio Hub</h3>
-            <p class="project-card-desc">A sleek personal portfolio platform with dynamic project showcasing.</p>
-            <div class="project-card-footer"><a href="#" class="btn btn-sm btn-primary">Visit Site →</a></div>
+            <div class="project-card-tag">BEM Master</div>
+            <h3 class="project-card-title">BEM Master</h3>
+            <p class="project-card-desc">المنصة الشاملة لتحضير شهادة التعليم المتوسط (BEM) في الجزائر -(ملخصات ومواضيع وتحيات ذكاء).</p>
+            <div class="project-card-footer"><a href="https://aaissat136.github.io/BEM-Master/" target="_blank" class="btn btn-sm btn-primary">Visit Site →</a></div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Tech Blog" data-category="blog">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="blog">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a2a3a,#0a4a6a);">📝</div>
           <div class="project-card-body">
             <div class="project-card-tag">Blog</div>
-            <h3 class="project-card-title">Tech Blog</h3>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">A modern tech blog with clean typography and fast loading.</p>
             <div class="project-card-footer"><a href="#" class="btn btn-sm btn-primary">Visit Site →</a></div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="E-Commerce Store" data-category="ecommerce">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="ecommerce">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a0a3a,#4a0a6a);">🛒</div>
           <div class="project-card-body">
-            <div class="project-card-tag">E-Commerce</div>
-            <h3 class="project-card-title">E-Commerce Store</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Full-featured online store with cart, checkout and payments.</p>
             <div class="project-card-footer"><a href="#" class="btn btn-sm btn-primary">Visit Site →</a></div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Landing Page" data-category="landing">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="landing">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#1a2a0a,#2a4a0a);">🚀</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Landing</div>
-            <h3 class="project-card-title">Landing Page</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">High-converting landing page with modern animations.</p>
             <div class="project-card-footer"><a href="#" class="btn btn-sm btn-primary">Visit Site →</a></div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Corporate Site" data-category="corporate">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="corporate">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a1a2a,#0a2a4a);">🏢</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Corporate</div>
-            <h3 class="project-card-title">Corporate Site</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Professional corporate website with multi-page structure.</p>
             <div class="project-card-footer"><a href="#" class="btn btn-sm btn-primary">Visit Site →</a></div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Restaurant Site" data-category="business">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="business">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#3a1a0a,#6a2a0a);">🍽️</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Business</div>
-            <h3 class="project-card-title">Restaurant Site</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Elegant restaurant website with menu and reservations.</p>
             <div class="project-card-footer"><a href="#" class="btn btn-sm btn-primary">Visit Site →</a></div>
           </div>
@@ -590,7 +567,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== APPS PAGE ==================== -->
 <main class="page" id="page-apps">
   <section class="section">
     <div class="container">
@@ -620,59 +596,77 @@ textarea.form-control{min-height:150px;resize:vertical;}
           <div class="project-card-body">
             <div class="project-card-tag">تعليم</div>
             <h3 class="project-card-title">BEM Master</h3>
-            <p class="project-card-desc">المنصة الشاملة لتحضير شهادة التعليم المتوسط (BEM) في الجزائر - ، ملخصات، وتحديات ذكاء.</p>
+            <p class="project-card-desc">المنصة الشاملة لتحضير شهادة التعليم المتوسط (BEM) في الجزائر -(ملخصات ومواضيع وتحيات ذكاء).</p>
             <div class="project-card-meta"><span>v2.1.0</span><span>⬇ 2.5K</span></div>
-            <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
+            <div class="project-card-footer" style="margin-top:1rem;">
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="https://aaissat136.github.io/BEM-Master/" target="_blank" class="btn btn-sm btn-primary">Visit Site</a>
+            </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Command Center" data-category="utility" data-downloads="1800">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="utility" data-downloads="1800">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a0a1a,#4a0a3a);">⚡</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Utility</div>
-            <h3 class="project-card-title">Command Center</h3>
+            <div class="project-card-tag"coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">All-in-one dashboard for managing your digital life.</p>
             <div class="project-card-meta"><span>v1.5.2</span><span>⬇ 1.8K</span></div>
-            <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
+            <div class="project-card-footer" style="margin-top:1rem;">
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Visit Site</a>
+            </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Focus Mode" data-category="productivity" data-downloads="3200">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="productivity" data-downloads="3200">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#1a2a0a,#2a4a0a);">🎯</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Productivity</div>
-            <h3 class="project-card-title">Focus Mode</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Distraction-free workspace with pomodoro timer.</p>
             <div class="project-card-meta"><span>v3.0.1</span><span>⬇ 3.2K</span></div>
-            <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
+            <div class="project-card-footer" style="margin-top:1rem;">
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Visit Site</a>
+            </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Neon Chat" data-category="social" data-downloads="4100">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="social" data-downloads="4100">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#3a0a2a,#6a0a4a);">💬</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Social</div>
-            <h3 class="project-card-title">Neon Chat</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Encrypted messaging with cyberpunk-inspired UI.</p>
             <div class="project-card-meta"><span>v1.2.0</span><span>⬇ 4.1K</span></div>
-            <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
+            <div class="project-card-footer" style="margin-top:1rem;">
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Visit Site</a>
+            </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Pixel Notes" data-category="productivity" data-downloads="1500">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="productivity" data-downloads="1500">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a2a0a,#4a4a0a);">📝</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Productivity</div>
-            <h3 class="project-card-title">Pixel Notes</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Minimalist note-taking with markdown support.</p>
             <div class="project-card-meta"><span>v2.0.0</span><span>⬇ 1.5K</span></div>
-            <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
+            <div class="project-card-footer" style="margin-top:1rem;">
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Visit Site</a>
+            </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Game Launcher" data-category="gaming" data-downloads="2800">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="gaming" data-downloads="2800">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#1a0a3a,#3a0a6a);">🎮</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Gaming</div>
-            <h3 class="project-card-title">Game Launcher</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Unified launcher for all your favorite games.</p>
             <div class="project-card-meta"><span>v1.8.3</span><span>⬇ 2.8K</span></div>
-            <div class="project-card-footer" style="margin-top:1rem;"><a href="#" class="btn btn-sm btn-primary">Download</a></div>
+            <div class="project-card-footer" style="margin-top:1rem;">
+              <a href="#" class="btn btn-sm btn-outline">Download</a>
+              <a href="#" class="btn btn-sm btn-primary">Visit Site</a>
+            </div>
           </div>
         </article>
       </div>
@@ -680,7 +674,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== GAMES PAGE ==================== -->
 <main class="page" id="page-games">
   <section class="section" style="background:radial-gradient(ellipse at top,rgba(155,93,229,0.15) 0%,transparent 60%);">
     <div class="container">
@@ -710,15 +703,15 @@ textarea.form-control{min-height:150px;resize:vertical;}
             <p class="project-card-desc">حطم وحقق اعلى نتيجة .</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
-              <a href="#" class="btn btn-sm btn-primary">Play Now</a>
+              <a href="https://aaissat136.github.io/lumina-gird-/" target="_blank" class="btn btn-sm btn-primary">Play Now</a>
             </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Shadow Protocol" data-category="stealth">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="stealth">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a0a2a,#1a0a4a);">🕵️</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Stealth</div>
-            <h3 class="project-card-title">Shadow Protocol</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Tactical stealth game with dynamic AI and branching paths.</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
@@ -726,11 +719,11 @@ textarea.form-control{min-height:150px;resize:vertical;}
             </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Pixel World" data-category="rpg">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="rpg">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a2a1a,#0a4a2a);">🗺️</div>
           <div class="project-card-body">
-            <div class="project-card-tag">RPG</div>
-            <h3 class="project-card-title">Pixel World</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Open-world pixel RPG with deep lore and exploration.</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
@@ -738,11 +731,11 @@ textarea.form-control{min-height:150px;resize:vertical;}
             </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Cyber Strike" data-category="action">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="action">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#2a0a1a,#4a0a3a);">⚔️</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Action</div>
-            <h3 class="project-card-title">Cyber Strike</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Fast-paced action shooter in a dystopian future.</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
@@ -750,11 +743,11 @@ textarea.form-control{min-height:150px;resize:vertical;}
             </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Mind Maze" data-category="puzzle">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="puzzle">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#0a1a3a,#0a3a6a);">🧩</div>
           <div class="project-card-body">
-            <div class="project-card-tag">Puzzle</div>
-            <h3 class="project-card-title">Mind Maze</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Mind-bending puzzle game with 100+ challenging levels.</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
@@ -762,11 +755,11 @@ textarea.form-control{min-height:150px;resize:vertical;}
             </div>
           </div>
         </article>
-        <article class="card project-card reveal searchable-card" data-title="Stellar Quest" data-category="rpg">
+        <article class="card project-card reveal searchable-card" data-title="coming soon" data-category="rpg">
           <div class="project-card-img-wrapper" style="background:linear-gradient(135deg,#1a0a2a,#3a0a5a);">🚀</div>
           <div class="project-card-body">
-            <div class="project-card-tag">RPG</div>
-            <h3 class="project-card-title">Stellar Quest</h3>
+            <div class="project-card-tag">coming soon</div>
+            <h3 class="project-card-title">coming soon</h3>
             <p class="project-card-desc">Space exploration RPG across procedurally generated galaxies.</p>
             <div class="project-card-footer">
               <a href="#" class="btn btn-sm btn-outline">Download</a>
@@ -779,7 +772,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== LINKS PAGE ==================== -->
 <main class="page" id="page-links">
   <section class="section">
     <div class="container">
@@ -795,7 +787,7 @@ textarea.form-control{min-height:150px;resize:vertical;}
           <div class="link-card-content"><h3>Instagram</h3><p>@aissat_abd_aljalil</p></div>
           <div class="link-card-arrow">→</div>
         </a>
-        <a href="https://youtube.com/" target="_blank" rel="noopener" class="card link-card reveal">
+        <a href="https://www.youtube.com/channel/UCnQqOWbQNZFard30zzH4RFg" target="_blank" rel="noopener" class="card link-card reveal">
           <div class="link-card-icon">▶️</div>
           <div class="link-card-content"><h3>YouTube</h3><p>Watch our latest videos</p></div>
           <div class="link-card-arrow">→</div>
@@ -825,7 +817,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== ABOUT PAGE ==================== -->
 <main class="page" id="page-about">
   <section class="about-hero">
     <div class="container">
@@ -915,7 +906,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== CONTACT PAGE ==================== -->
 <main class="page" id="page-contact">
   <section class="section">
     <div class="container">
@@ -970,7 +960,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </section>
 </main>
 
-<!-- ==================== FOOTER ==================== -->
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
@@ -1022,7 +1011,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   </div>
 </footer>
 
-<!-- ==================== LIGHTBOX ==================== -->
 <div class="lightbox" id="lightbox">
   <div class="lightbox-content">
     <button class="lightbox-close" id="lightbox-close">×</button>
@@ -1031,7 +1019,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
 </div>
 
 <script>
-/* ==================== THEME SYSTEM ==================== */
 (function(){
   const themeToggle=document.querySelector('.theme-toggle');
   const currentTheme=localStorage.getItem('evx-theme')||'dark';
@@ -1047,7 +1034,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   function updateThemeIcon(theme){themeToggle.textContent=theme==='dark'?'🌙':'☀️';}
 })();
 
-/* ==================== PAGE NAVIGATION ==================== */
 (function(){
   function navigateTo(page){
     document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
@@ -1077,7 +1063,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   });
 })();
 
-/* ==================== NAVBAR ==================== */
 (function(){
   const navbar=document.getElementById('navbar');
   window.addEventListener('scroll',()=>{
@@ -1091,7 +1076,6 @@ textarea.form-control{min-height:150px;resize:vertical;}
   });
 })();
 
-/* ==================== REVEAL ANIMATIONS ==================== */
 function initReveal(){
   const reveals=document.querySelectorAll('.reveal:not(.active)');
   const observer=new IntersectionObserver((entries)=>{
@@ -1106,7 +1090,6 @@ function initReveal(){
 }
 initReveal();
 
-/* ==================== STATS COUNTER ==================== */
 function initStats(){
   const stats=document.querySelectorAll('.stat-number');
   const observer=new IntersectionObserver((entries)=>{
@@ -1132,7 +1115,6 @@ function initStats(){
 }
 initStats();
 
-/* ==================== HERO CANVAS PARTICLES ==================== */
 (function(){
   const canvas=document.getElementById('hero-canvas');
   if(!canvas) return;
@@ -1187,10 +1169,8 @@ initStats();
   animate();
 })();
 
-/* ==================== SEARCH & FILTER (FIXED) ==================== */
 function initSearchFilter(gridId, pageId, searchId, filterClass, sortId){
   const searchInput=document.getElementById(searchId);
-  // FIX: Corrected selector to target the actual page ID
   const filterBtns=document.querySelectorAll('#page-'+pageId+' .'+filterClass);
   const cards=document.querySelectorAll('#'+gridId+' .searchable-card');
   const sortSelect=document.getElementById(sortId);
@@ -1200,7 +1180,6 @@ function initSearchFilter(gridId, pageId, searchId, filterClass, sortId){
     const activeFilter=document.querySelector('#page-'+pageId+' .'+filterClass+'.active');
     const category=activeFilter?activeFilter.getAttribute('data-filter'):'all';
     cards.forEach(card=>{
-      // FIX: Search through all text content (title, description, tags)
       const text = card.textContent.toLowerCase();
       const cardCategory=card.getAttribute('data-category');
       const matchesSearch = query === '' || text.includes(query);
@@ -1226,33 +1205,27 @@ function initSearchFilter(gridId, pageId, searchId, filterClass, sortId){
     items.forEach(item=>container.appendChild(item));
   });
 }
-// FIX: Passed correct page IDs ('apps' and 'games')
 initSearchFilter('apps-grid', 'apps', 'apps-search', 'filter-btn', 'apps-sort');
 initSearchFilter('games-grid', 'games', 'games-search', 'filter-btn', null);
 
-/* ==================== EXPLORE PAGE LOGIC (FIXED) ==================== */
 function initExplorePage() {
     const exploreGrid = document.getElementById('explore-grid');
     if (!exploreGrid || exploreGrid.dataset.initialized) return;
     
     exploreGrid.innerHTML = '';
     
-    // Clone apps from Apps page
     document.querySelectorAll('#apps-grid .searchable-card').forEach(card => {
         const clone = card.cloneNode(true);
         clone.setAttribute('data-type', 'app');
         clone.classList.add('explore-card');
-        // FIX: Remove 'reveal' class so cards are immediately visible
         clone.classList.remove('reveal'); 
         exploreGrid.appendChild(clone);
     });
     
-    // Clone games from Games page
     document.querySelectorAll('#games-grid .searchable-card').forEach(card => {
         const clone = card.cloneNode(true);
         clone.setAttribute('data-type', 'game');
         clone.classList.add('explore-card');
-        // FIX: Remove 'reveal' class so cards are immediately visible
         clone.classList.remove('reveal'); 
         exploreGrid.appendChild(clone);
     });
@@ -1269,7 +1242,6 @@ function initExplorePage() {
         const type = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
         
         cards.forEach(card => {
-            // FIX: Search through all text content
             const text = card.textContent.toLowerCase();
             const cardType = card.getAttribute('data-type');
             
@@ -1282,7 +1254,7 @@ function initExplorePage() {
     
     if(searchInput) {
         searchInput.addEventListener('input', filterExplore);
-        filterExplore(); // Run once to set initial state
+        filterExplore();
     }
     
     filterBtns.forEach(btn => {
@@ -1294,7 +1266,6 @@ function initExplorePage() {
     });
 }
 
-/* ==================== GALLERY LIGHTBOX ==================== */
 (function(){
   const galleryItems=document.querySelectorAll('.gallery-item');
   const lightbox=document.getElementById('lightbox');
@@ -1319,7 +1290,6 @@ function initExplorePage() {
   document.addEventListener('keydown',e=>{if(e.key==='Escape')lightbox.classList.remove('active');});
 })();
 
-/* ==================== CONTACT FORM ==================== */
 (function(){
   const form=document.getElementById('contact-form');
   if(form){
@@ -1336,7 +1306,6 @@ function initExplorePage() {
   }
 })();
 
-/* ==================== YEAR ==================== */
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
